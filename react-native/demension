@@ -1,0 +1,53 @@
+// demension: fix vs flex
+
+import React, { Component } from "react";
+import {StyleSheet ,View} from "react-native";
+
+
+export default class App extends Component{
+  render(){
+    return(
+      <View style={styles_flex.container}>
+        <View style={styles_flex.blue1}/>
+        <View style={styles_flex.blue2}/>
+        <View style={styles_flex.blue3}/>
+      </View>
+    );
+  }
+}
+
+const styles_fixed= StyleSheet.create({
+  blue1:{
+    width:100,
+    height:100,
+    backgroundColor:"#00D8FF",
+  },
+  blue2:{
+    width:200,
+    height:200,
+    backgroundColor:"#0054FF",
+  },
+  blue3:{
+    width:300,
+    height:300,
+    backgroundColor:"#0000A5",
+  }
+})
+
+const styles_flex= StyleSheet.create({
+  container:{
+    flex:1,
+  },
+  blue1:{
+    flex:1,
+    backgroundColor:"#00D8FF",
+  },
+  blue2:{
+    flex:2,
+    backgroundColor:"#0054FF",
+  },
+  blue3:{
+    flex:3,
+    backgroundColor:"#0000A5",
+  }
+})
