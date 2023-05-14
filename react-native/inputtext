@@ -23,3 +23,5 @@ export default class App extends Component{
 
     
 }
+
+# inputtext안에 onchange와 onchangetext 문법으로 입력값에 따라서 설정을 줄수 있다
